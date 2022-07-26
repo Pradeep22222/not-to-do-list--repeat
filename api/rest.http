@@ -1,0 +1,27 @@
+### testing root api for get method
+GET http://localhost:8000/
+### fetch all task
+Get http://localhost:8000/api/v1/task/
+### add new task
+POST http://localhost:8000/api/v1/task
+Content-Type: application/json
+
+{
+    "task":"testing the error",
+    "hr": 2,
+    "type":"entry"
+}
+### update or switch task
+PATCH http://localhost:8000/api/v1/task
+content-type:application/json
+
+{
+    "_id": "bad"
+}
+### delete the tasks
+DELETE http://localhost:8000/api/v1/task
+content-type:application/json
+
+{
+    "ids":[ "62d22f7fbb9a1b96e3e8ccf4","62dcc96170b1ec059292134f"]
+}
