@@ -7,7 +7,7 @@ POST http://localhost:8000/api/v1/task
 Content-Type: application/json
 
 {
-    "task":"testing the error",
+    "task":"testing the error baby",
     "hr": 2,
     "type":"entry"
 }
