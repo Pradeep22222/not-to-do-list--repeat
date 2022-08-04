@@ -1,3 +1,4 @@
+import "dotenv/config";
 import express from "express";
 import helmet from "helmet";
 import cors from "cors";
@@ -5,7 +6,7 @@ import path from "path"; // is used to create absolute path using path.resolve
 const app = express();
 const PORT = 8000;
 import taskRouter from "./src/routers/taskRouter.js";
-// absolute path for the porjection
+// absolute path for the porject
 const __dirname = path.resolve();
 // middlewares
 app.use(express.json());
